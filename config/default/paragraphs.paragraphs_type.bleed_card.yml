@@ -1,0 +1,9 @@
+uuid: 3461b264-9447-4dd7-bec2-cf5b19373f85
+langcode: en
+status: true
+dependencies: {  }
+id: bleed_card
+label: 'Page card'
+icon_uuid: null
+description: 'Text with background color and image with edge bleed'
+behavior_plugins: {  }

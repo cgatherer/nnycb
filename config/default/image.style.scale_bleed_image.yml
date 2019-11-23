@@ -1,0 +1,15 @@
+uuid: 87390ed6-be74-447c-83ca-9d1171617920
+langcode: en
+status: true
+dependencies: {  }
+name: scale_bleed_image
+label: 'Scale bleed image'
+effects:
+  8d504eb4-db56-4b41-a7af-49e8f1612e7c:
+    uuid: 8d504eb4-db56-4b41-a7af-49e8f1612e7c
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 2000
+      upscale: true

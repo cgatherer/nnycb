@@ -1,0 +1,7 @@
+lighting_display.lighting_display_request_form:
+  path: '/lighting_display/form/lighting_display_request'
+  defaults:
+    _form: '\Drupal\lighting_display\Form\LightingDisplayRequestForm'
+    _title: 'LightingDisplayRequestForm'
+  requirements:
+    _access: 'TRUE'

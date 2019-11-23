@@ -1,0 +1,21 @@
+uuid: d4af127c-98cd-4c99-83ff-d3656a9a4192
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_copy
+    - paragraphs.paragraphs_type.bleed_grid_card
+  module:
+    - text
+id: paragraph.bleed_grid_card.field_grid_copy
+field_name: field_grid_copy
+entity_type: paragraph
+bundle: bleed_grid_card
+label: 'Grid copy'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

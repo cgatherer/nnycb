@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.lighting_slot.lighting_slot.field_slot_date
+  module:
+    - datetime
+    - lighting_display
+id: lighting_slot.lighting_slot.default
+targetEntityType: lighting_slot
+bundle: lighting_slot
+mode: default
+content:
+  field_slot_date:
+    weight: -3
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: m/d/Y
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+hidden: {  }

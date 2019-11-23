@@ -1,0 +1,25 @@
+uuid: 6b668601-5882-4c71-a031-4880827bcb49
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.cuomo-footer-menu
+  module:
+    - system
+  theme:
+    - nnycb_sass
+id: cuomofootermenu
+theme: nnycb_sass
+region: footer_second
+weight: -9
+provider: null
+plugin: 'system_menu_block:cuomo-footer-menu'
+settings:
+  id: 'system_menu_block:cuomo-footer-menu'
+  label: 'Cuomo Footer Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

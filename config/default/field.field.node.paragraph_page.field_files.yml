@@ -1,0 +1,27 @@
+uuid: 405af817-3bbd-4eb9-bd53-5698ef8f5daa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.paragraph_page
+  module:
+    - file
+id: node.paragraph_page.field_files
+field_name: field_files
+entity_type: node
+bundle: paragraph_page
+label: Files
+description: 'Files are not displayed directly, but you can upload them here and copy the url to use in a link. Right-click on file link after upload and choose "Copy link address". After pasting, remove the domain (e.g. https://dev-nnycb.pantheonsite.io) from the url so it begins /sites/default/files....'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'uploaded_files/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf jpg xls xlsx ppt pptx png'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

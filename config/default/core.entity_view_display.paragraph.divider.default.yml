@@ -1,0 +1,22 @@
+uuid: 62270761-f376-4bde-bb15-dc666eecd277
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.divider.field_container_color
+    - paragraphs.paragraphs_type.divider
+  module:
+    - options
+id: paragraph.divider.default
+targetEntityType: paragraph
+bundle: divider
+mode: default
+content:
+  field_container_color:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

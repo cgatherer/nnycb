@@ -1,0 +1,21 @@
+uuid: efaa8230-250f-4233-a707-11c28d765d7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_copy
+    - paragraphs.paragraphs_type.accordion_item
+  module:
+    - text
+id: paragraph.accordion_item.field_copy
+field_name: field_copy
+entity_type: paragraph
+bundle: accordion_item
+label: Copy
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

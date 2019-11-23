@@ -1,0 +1,27 @@
+uuid: e8cc46e8-af2a-4d4f-bfc8-a405bc854a50
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_add_arrows
+field_name: field_add_arrows
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: 'Left Arrow'
+    -
+      value: '1'
+      label: 'Right Arrow'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

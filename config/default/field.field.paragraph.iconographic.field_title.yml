@@ -1,0 +1,19 @@
+uuid: cf1ea7e7-7cfd-4154-9d99-77e11d667e1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.iconographic
+id: paragraph.iconographic.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: iconographic
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

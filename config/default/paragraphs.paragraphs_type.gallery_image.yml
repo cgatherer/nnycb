@@ -1,0 +1,9 @@
+uuid: d78732a3-05d1-45e3-9405-05d0da0f9cef
+langcode: en
+status: true
+dependencies: {  }
+id: gallery_image
+label: 'Gallery image'
+icon_uuid: null
+description: 'Sub-paragraph: Image with caption'
+behavior_plugins: {  }

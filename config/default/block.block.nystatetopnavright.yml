@@ -1,0 +1,25 @@
+uuid: 8607145c-9cdd-4081-b81f-e2de9a13f2be
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.nystatetopnavright
+  module:
+    - system
+  theme:
+    - nnycb_sass
+id: nystatetopnavright
+theme: nnycb_sass
+region: secondary_menu
+weight: -4
+provider: null
+plugin: 'system_menu_block:nystatetopnavright'
+settings:
+  id: 'system_menu_block:nystatetopnavright'
+  label: 'Ny State Top Nav - Right'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

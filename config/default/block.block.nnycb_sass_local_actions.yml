@@ -1,0 +1,20 @@
+uuid: 8d8b9b03-4377-4500-bbc0-e89d2d85d1ae
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nnycb_sass
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: nnycb_sass_local_actions
+theme: nnycb_sass
+region: content
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: bea78306-36ca-4af1-b4cc-4eac6f647256
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_copy
+    - paragraphs.paragraphs_type.info_list
+  module:
+    - text
+id: paragraph.info_list.field_copy
+field_name: field_copy
+entity_type: paragraph
+bundle: info_list
+label: Copy
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

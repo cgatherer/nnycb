@@ -1,0 +1,31 @@
+uuid: 25441821-9b65-4555-b668-48979a93ecd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_statistic.field_copy
+    - field.field.paragraph.card_statistic.field_title
+    - paragraphs.paragraphs_type.card_statistic
+  module:
+    - text
+id: paragraph.card_statistic.default
+targetEntityType: paragraph
+bundle: card_statistic
+mode: default
+content:
+  field_copy:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

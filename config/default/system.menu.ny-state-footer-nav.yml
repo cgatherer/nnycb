@@ -1,0 +1,8 @@
+uuid: bbbd4a0e-2865-4b9b-ada5-6b9e7991bad3
+langcode: en
+status: true
+dependencies: {  }
+id: ny-state-footer-nav
+label: 'Ny State Footer Nav'
+description: 'Site links for the state of New York'
+locked: false

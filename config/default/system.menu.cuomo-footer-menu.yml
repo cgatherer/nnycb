@@ -1,0 +1,8 @@
+uuid: 0636b47e-7531-487d-9eed-b6d09bc10aec
+langcode: en
+status: true
+dependencies: {  }
+id: cuomo-footer-menu
+label: 'Cuomo Footer Menu'
+description: 'Site links for the Cuomo news and events'
+locked: false

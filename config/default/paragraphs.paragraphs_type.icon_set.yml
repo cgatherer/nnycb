@@ -1,0 +1,9 @@
+uuid: 671404cb-7c08-48e2-bdca-41c3ade5bf27
+langcode: en
+status: true
+dependencies: {  }
+id: icon_set
+label: 'Icon Set'
+icon_uuid: null
+description: 'Element of Iconographic paragraph'
+behavior_plugins: {  }

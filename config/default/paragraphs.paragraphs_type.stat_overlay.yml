@@ -1,0 +1,9 @@
+uuid: cf9aa768-e561-49d1-ac01-2f0e20a94022
+langcode: en
+status: true
+dependencies: {  }
+id: stat_overlay
+label: 'Stat overlay'
+icon_uuid: null
+description: 'Sub-paragraph: Short stat text with caption'
+behavior_plugins: {  }

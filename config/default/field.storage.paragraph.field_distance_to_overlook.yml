@@ -1,0 +1,21 @@
+uuid: 6b35ea57-64db-4235-8f3f-00ade98061cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_distance_to_overlook
+field_name: field_distance_to_overlook
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

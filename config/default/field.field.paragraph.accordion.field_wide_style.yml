@@ -1,0 +1,23 @@
+uuid: c8ef86ee-95d0-46a2-920d-b535a21a2ee4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wide_style
+    - paragraphs.paragraphs_type.accordion
+id: paragraph.accordion.field_wide_style
+field_name: field_wide_style
+entity_type: paragraph
+bundle: accordion
+label: 'Wide style'
+description: 'Full content column width for accordion items'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

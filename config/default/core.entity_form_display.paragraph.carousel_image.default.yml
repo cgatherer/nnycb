@@ -1,0 +1,51 @@
+uuid: 57c057c5-25d6-46c2-8c7b-b7547335d4fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carousel_image.field_carousel_image
+    - field.field.paragraph.carousel_image.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.carousel_image
+  module:
+    - image_widget_crop
+    - lightning_media
+id: paragraph.carousel_image.default
+targetEntityType: paragraph
+bundle: carousel_image
+mode: default
+content:
+  field_carousel_image:
+    weight: 0
+    settings:
+      show_default_crop: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - hero_narrow
+        - hero_small
+        - hero_standard
+      crop_types_required:
+        - hero_narrow
+        - hero_small
+        - hero_standard
+      progress_indicator: throbber
+      show_crop_area: false
+      warn_multiple_usages: false
+    third_party_settings:
+      lightning_media:
+        file_links: true
+        remove_button: true
+    type: image_widget_crop
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

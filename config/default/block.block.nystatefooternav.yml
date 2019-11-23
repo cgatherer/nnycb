@@ -1,0 +1,25 @@
+uuid: feed67ea-cecb-4761-9d7a-6528a9cbd732
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.ny-state-footer-nav
+  module:
+    - system
+  theme:
+    - nnycb_sass
+id: nystatefooternav
+theme: nnycb_sass
+region: footer_fifth
+weight: -11
+provider: null
+plugin: 'system_menu_block:ny-state-footer-nav'
+settings:
+  id: 'system_menu_block:ny-state-footer-nav'
+  label: 'Ny State Footer Nav'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: e83cfd97-bc61-44f2-adba-339c269d23a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - nnycb_helpers
+  theme:
+    - nnycb_sass
+id: nyfooterlogo
+theme: nnycb_sass
+region: footer_fifth
+weight: -12
+provider: null
+plugin: ny_footer_logo_block
+settings:
+  id: ny_footer_logo_block
+  label: 'NY Footer Logo'
+  provider: nnycb_helpers
+  label_display: '0'
+visibility: {  }

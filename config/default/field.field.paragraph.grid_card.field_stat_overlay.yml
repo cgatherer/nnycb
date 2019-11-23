@@ -1,0 +1,115 @@
+uuid: 340ecbe7-1b18-4544-9263-35ac3a5cbc96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_stat_overlay
+    - paragraphs.paragraphs_type.grid_card
+    - paragraphs.paragraphs_type.stat
+  module:
+    - entity_reference_revisions
+id: paragraph.grid_card.field_stat_overlay
+field_name: field_stat_overlay
+entity_type: paragraph
+bundle: grid_card
+label: 'Stat overlay'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      stat: stat
+    target_bundles_drag_drop:
+      bleed_card:
+        weight: 6
+        enabled: false
+      card:
+        weight: 7
+        enabled: false
+      grid_card:
+        weight: 8
+        enabled: false
+      stat_overlay:
+        weight: 9
+        enabled: false
+      webform:
+        weight: 10
+        enabled: false
+      accordion:
+        weight: 30
+        enabled: false
+      accordion_item:
+        weight: 31
+        enabled: false
+      bleed_grid_card:
+        weight: 33
+        enabled: false
+      block:
+        weight: 34
+        enabled: false
+      bridge_navigation:
+        weight: 35
+        enabled: false
+      bridge_status:
+        weight: 36
+        enabled: false
+      card_detail:
+        weight: 38
+        enabled: false
+      card_statistic:
+        weight: 39
+        enabled: false
+      carousel:
+        weight: 40
+        enabled: false
+      carousel_image:
+        weight: 41
+        enabled: false
+      complex_copy:
+        weight: 42
+        enabled: false
+      detail:
+        weight: 43
+        enabled: false
+      gallery:
+        weight: 44
+        enabled: false
+      gallery_image:
+        weight: 45
+        enabled: false
+      icon:
+        weight: 47
+        enabled: false
+      iconographic:
+        weight: 48
+        enabled: false
+      icon_set:
+        weight: 49
+        enabled: false
+      info_item:
+        weight: 50
+        enabled: false
+      info_list:
+        weight: 51
+        enabled: false
+      overlook_link:
+        weight: 52
+        enabled: false
+      simple_copy:
+        weight: 53
+        enabled: false
+      stat:
+        enabled: true
+        weight: 54
+      stat_card:
+        weight: 55
+        enabled: false
+      video:
+        weight: 57
+        enabled: false
+field_type: entity_reference_revisions

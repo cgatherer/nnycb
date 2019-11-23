@@ -1,0 +1,68 @@
+uuid: b80cc139-b5d3-4eb5-bec3-e9de60723aed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.simple_copy.field_container_color
+    - field.field.paragraph.simple_copy.field_copy
+    - field.field.paragraph.simple_copy.field_header_text_size
+    - field.field.paragraph.simple_copy.field_highlight_text
+    - field.field.paragraph.simple_copy.field_title
+    - field.field.paragraph.simple_copy.field_wide_style
+    - paragraphs.paragraphs_type.simple_copy
+  module:
+    - options
+    - text
+id: paragraph.simple_copy.default
+targetEntityType: paragraph
+bundle: simple_copy
+mode: default
+content:
+  field_container_color:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_copy:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_header_text_size:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_highlight_text:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_wide_style:
+    weight: 7
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+hidden: {  }

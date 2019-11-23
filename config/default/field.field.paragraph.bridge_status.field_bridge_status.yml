@@ -1,0 +1,21 @@
+uuid: 11f09f8a-e462-453f-a219-c6b7e0a5c3c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bridge_status
+    - paragraphs.paragraphs_type.bridge_status
+  module:
+    - options
+id: paragraph.bridge_status.field_bridge_status
+field_name: field_bridge_status
+entity_type: paragraph
+bundle: bridge_status
+label: 'Bridge Status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,15 @@
+uuid: b8490e15-6203-48d4-84d6-c9576b6fb178
+langcode: en
+status: true
+dependencies: {  }
+name: info_item_image
+label: 'Info Item Image'
+effects:
+  849a397b-cdc0-4bfe-a33c-2f084b43cf9b:
+    uuid: 849a397b-cdc0-4bfe-a33c-2f084b43cf9b
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1000
+      height: 750
+      anchor: center-center

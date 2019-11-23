@@ -1,0 +1,33 @@
+add lighting display entities:
+  title: 'Create new Lighting display entities'
+
+administer lighting display entities:
+  title: 'Administer Lighting display entities'
+  description: 'Allow to access the administration form to configure Lighting display entities.'
+  restrict access: true
+
+delete lighting display entities:
+  title: 'Delete Lighting display entities'
+
+edit lighting display entities:
+  title: 'Edit Lighting display entities'
+
+view lighting display entities:
+  title: 'View Lighting display entities'
+
+add lighting slot entities:
+  title: 'Create new Lighting slot entities'
+
+administer lighting slot entities:
+  title: 'Administer Lighting slot entities'
+  description: 'Allow to access the administration form to configure Lighting slot entities.'
+  restrict access: true
+
+delete lighting slot entities:
+  title: 'Delete Lighting slot entities'
+
+edit lighting slot entities:
+  title: 'Edit Lighting slot entities'
+
+view lighting slot entities:
+  title: 'View Lighting slot entities'

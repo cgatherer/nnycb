@@ -1,0 +1,9 @@
+uuid: 7b166473-8ff1-4497-9797-b953ee97dc95
+langcode: en
+status: true
+dependencies: {  }
+id: gallery
+label: Gallery
+icon_uuid: null
+description: 'Series of images with captions'
+behavior_plugins: {  }

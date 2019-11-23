@@ -1,0 +1,21 @@
+uuid: daa664c3-a474-4b3d-8d6b-cae316d4cd0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_container_color
+    - paragraphs.paragraphs_type.simple_copy
+  module:
+    - options
+id: paragraph.simple_copy.field_container_color
+field_name: field_container_color
+entity_type: paragraph
+bundle: simple_copy
+label: 'Container color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

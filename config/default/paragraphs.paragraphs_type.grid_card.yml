@@ -1,0 +1,9 @@
+uuid: 63821975-8a32-46a0-9b20-7f0296785454
+langcode: en
+status: true
+dependencies: {  }
+id: grid_card
+label: 2up-Stat
+icon_uuid: null
+description: 'Text and images with optional stat overlay'
+behavior_plugins: {  }

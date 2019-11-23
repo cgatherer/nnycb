@@ -1,0 +1,24 @@
+uuid: 4408442c-874f-4eca-8256-ad63327831bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.lighting_slot.lighting_slot.field_slot_date
+  module:
+    - datetime
+    - inline_entity_form
+    - lighting_display
+_core:
+  default_config_hash: HuywQruoWxbRtl3aBuMorYlL3lcid2pf3uPjmennZxY
+id: lighting_slot.lighting_slot.default
+targetEntityType: lighting_slot
+bundle: lighting_slot
+mode: default
+content:
+  field_slot_date:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden: {  }

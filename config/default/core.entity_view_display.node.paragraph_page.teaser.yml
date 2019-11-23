@@ -1,0 +1,33 @@
+uuid: 279cee0e-86ba-4f66-8303-b22bfb17001b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.paragraph_page.body
+    - node.type.paragraph_page
+  module:
+    - text
+    - user
+id: node.paragraph_page.teaser
+targetEntityType: node
+bundle: paragraph_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_hero_image: true
+  field_hero_title: true
+  field_paragraphs: true

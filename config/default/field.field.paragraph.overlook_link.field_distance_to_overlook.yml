@@ -1,0 +1,19 @@
+uuid: 9e768b44-af6f-4de5-b73f-8ec58a6cdac0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_distance_to_overlook
+    - paragraphs.paragraphs_type.overlook_link
+id: paragraph.overlook_link.field_distance_to_overlook
+field_name: field_distance_to_overlook
+entity_type: paragraph
+bundle: overlook_link
+label: 'Distance from current location'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

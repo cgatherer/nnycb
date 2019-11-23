@@ -1,0 +1,9 @@
+uuid: ac90beb1-0e5f-4773-ae2e-869db4e71b20
+langcode: en
+status: true
+dependencies: {  }
+id: iconographic
+label: Iconographic
+icon_uuid: null
+description: 'Sets of icons with titles'
+behavior_plugins: {  }

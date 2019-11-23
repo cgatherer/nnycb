@@ -1,0 +1,23 @@
+uuid: 9ffea44e-1906-418c-a5f0-f144df9a0375
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_full_width
+    - paragraphs.paragraphs_type.complex_copy
+id: paragraph.complex_copy.field_full_width
+field_name: field_full_width
+entity_type: paragraph
+bundle: complex_copy
+label: 'Full width'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

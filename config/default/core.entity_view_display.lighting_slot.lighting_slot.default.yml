@@ -1,0 +1,26 @@
+uuid: 62de34d3-6f6a-48bc-9e8d-15d993f3e8dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.lighting_slot.lighting_slot.field_slot_date
+  module:
+    - datetime
+    - lighting_display
+_core:
+  default_config_hash: vsm2amSxNQpVP6jBDO9cu7pWsBLQvqI0cfdx0P7NMzE
+id: lighting_slot.lighting_slot.default
+targetEntityType: lighting_slot
+bundle: lighting_slot
+mode: default
+content:
+  field_slot_date:
+    weight: -3
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: m/d/Y
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+hidden: {  }

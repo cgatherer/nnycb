@@ -1,0 +1,9 @@
+uuid: 9b17eae0-6b8c-4af3-9d89-84def9144c36
+langcode: en
+status: true
+dependencies: {  }
+id: detail
+label: Detail
+icon_uuid: null
+description: 'Sub-paragraph: Title and text area value'
+behavior_plugins: {  }

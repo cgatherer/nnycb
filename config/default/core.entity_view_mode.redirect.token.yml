@@ -1,0 +1,14 @@
+uuid: 7c77f012-005a-48df-bfbe-6f3c9cefe397
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - redirect
+third_party_settings:
+  lightning_core:
+    internal: true
+id: redirect.token
+label: Token
+targetEntityType: redirect
+cache: true

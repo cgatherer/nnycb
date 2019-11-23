@@ -1,0 +1,32 @@
+uuid: c68adb50-12f8-4d4d-9de1-c4ad7402df8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stat.field_stat_value
+    - field.field.paragraph.stat.field_title
+    - paragraphs.paragraphs_type.stat
+id: paragraph.stat.default
+targetEntityType: paragraph
+bundle: stat
+mode: default
+content:
+  field_stat_value:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

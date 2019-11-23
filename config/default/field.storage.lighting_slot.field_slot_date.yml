@@ -1,0 +1,22 @@
+uuid: 5f3ddb23-d5a9-4bc2-b4db-335e91eb4c20
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - lighting_display
+_core:
+  default_config_hash: rSPwpdQYOtQ7vSEFUGDM2q15fhW8WsFcta_sN_stbyY
+id: lighting_slot.field_slot_date
+field_name: field_slot_date
+entity_type: lighting_slot
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

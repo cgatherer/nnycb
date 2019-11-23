@@ -1,0 +1,21 @@
+uuid: c0bcc75f-56c5-44d4-b4d8-d37e273591d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_copy
+    - paragraphs.paragraphs_type.grid_card
+  module:
+    - text
+id: paragraph.grid_card.field_grid_copy
+field_name: field_grid_copy
+entity_type: paragraph
+bundle: grid_card
+label: 'Grid copy'
+description: 'Text elements of the grid'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 222d6a7d-996a-4912-a48b-285ae45b1d9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_container_color
+    - paragraphs.paragraphs_type.complex_copy
+  module:
+    - options
+id: paragraph.complex_copy.field_container_color
+field_name: field_container_color
+entity_type: paragraph
+bundle: complex_copy
+label: 'Container color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

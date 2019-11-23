@@ -1,0 +1,9 @@
+nnycb_helpers.bridge_status_form:
+  path: '/admin/config/system/bridge-status'
+  defaults:
+    _form: '\Drupal\nnycb_helpers\Form\BridgeStatusForm'
+    _title: 'Bridge Status'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

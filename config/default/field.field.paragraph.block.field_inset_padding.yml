@@ -1,0 +1,23 @@
+uuid: b8635f59-58ea-4817-aac9-b43d6e026305
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_inset_padding
+    - paragraphs.paragraphs_type.block
+id: paragraph.block.field_inset_padding
+field_name: field_inset_padding
+entity_type: paragraph
+bundle: block
+label: 'Inset padding'
+description: 'Pad the content column sides'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

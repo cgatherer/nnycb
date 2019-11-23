@@ -1,0 +1,20 @@
+uuid: 9b45580c-d687-45cb-a601-463c08ecfcc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - nnycb_helpers
+  theme:
+    - nnycb_sass
+id: cuomofooterlogo
+theme: nnycb_sass
+region: footer_fourth
+weight: -8
+provider: null
+plugin: cuomo_footer_logo_block
+settings:
+  id: cuomo_footer_logo_block
+  label: 'Cuomo Footer Logo'
+  provider: nnycb_helpers
+  label_display: '0'
+visibility: {  }

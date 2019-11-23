@@ -1,0 +1,20 @@
+uuid: ddfdfdeb-827b-4fe6-8ee2-00d250dbf360
+langcode: en
+status: true
+dependencies:
+  module:
+    - nnycb_helpers
+  theme:
+    - nnycb_sass
+id: universalsearch_2
+theme: nnycb_sass
+region: secondary_menu
+weight: -5
+provider: null
+plugin: universal_search_block
+settings:
+  id: universal_search_block
+  label: 'Universal Search'
+  provider: nnycb_helpers
+  label_display: '0'
+visibility: {  }

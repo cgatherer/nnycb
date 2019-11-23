@@ -1,0 +1,43 @@
+uuid: 39f291fc-c830-4b70-a033-24ff30d2380c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.overlook_link.field_distance_to_overlook
+    - field.field.paragraph.overlook_link.field_link
+    - field.field.paragraph.overlook_link.field_title
+    - paragraphs.paragraphs_type.overlook_link
+  module:
+    - link
+id: paragraph.overlook_link.default
+targetEntityType: paragraph
+bundle: overlook_link
+mode: default
+content:
+  field_distance_to_overlook:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

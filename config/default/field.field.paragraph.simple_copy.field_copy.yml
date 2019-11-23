@@ -1,0 +1,21 @@
+uuid: ecb85439-952a-4035-ac29-4d69eaca801b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_copy
+    - paragraphs.paragraphs_type.simple_copy
+  module:
+    - text
+id: paragraph.simple_copy.field_copy
+field_name: field_copy
+entity_type: paragraph
+bundle: simple_copy
+label: Copy
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

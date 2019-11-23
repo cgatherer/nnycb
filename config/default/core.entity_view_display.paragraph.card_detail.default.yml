@@ -1,0 +1,31 @@
+uuid: 759fee33-e465-427d-9c21-4c0112dda755
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_detail.field_copy
+    - field.field.paragraph.card_detail.field_title
+    - paragraphs.paragraphs_type.card_detail
+  module:
+    - text
+id: paragraph.card_detail.default
+targetEntityType: paragraph
+bundle: card_detail
+mode: default
+content:
+  field_copy:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

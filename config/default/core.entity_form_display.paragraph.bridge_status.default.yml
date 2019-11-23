@@ -1,0 +1,40 @@
+uuid: 5cb5da53-4833-4ef9-ae5e-f3f0971dccc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bridge_status.field_bridge_status
+    - field.field.paragraph.bridge_status.field_link
+    - field.field.paragraph.bridge_status.field_show_falcon_cam
+    - paragraphs.paragraphs_type.bridge_status
+  module:
+    - link
+id: paragraph.bridge_status.default
+targetEntityType: paragraph
+bundle: bridge_status
+mode: default
+content:
+  field_bridge_status:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_show_falcon_cam:
+    weight: 0
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  status: true

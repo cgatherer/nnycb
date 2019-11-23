@@ -1,0 +1,29 @@
+uuid: 3c858028-72ea-4ca2-8151-db06dc84819a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stat_overlay.field_stat
+    - field.field.paragraph.stat_overlay.field_stat_caption
+    - paragraphs.paragraphs_type.stat_overlay
+id: paragraph.stat_overlay.default
+targetEntityType: paragraph
+bundle: stat_overlay
+mode: default
+content:
+  field_stat:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_stat_caption:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

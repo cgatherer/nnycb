@@ -1,0 +1,17 @@
+uuid: dfdf19f2-d347-4599-9e69-c4b9c8f2e692
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Paragraph page'
+type: paragraph_page
+description: 'Add all content as paragraphs, except Hero image/title to appear between Main and Sub-navigations'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

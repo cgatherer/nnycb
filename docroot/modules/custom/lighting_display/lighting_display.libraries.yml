@@ -1,0 +1,32 @@
+display_request:
+  version: VERSION
+  js:
+    js/display_request.js: {}
+    /core/assets/vendor/jquery.ui/ui/escape-selector-min.js: { minified: true }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/jquery.ui.datepicker
+    - jquery_ui_selectmenu/selectmenu
+    - core/drupal
+
+lighting_display:
+  version: VERSION
+  js:
+    js/lighting_display.js: {}
+    https://static.addtoany.com/menu/page.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+
+lighting_share:
+  version: VERSION
+  js:
+    js/lighting_share.js: {}
+    https://static.addtoany.com/menu/page.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal

@@ -1,0 +1,14 @@
+uuid: 6203f1c9-685c-4d07-9574-19cf306cb09c
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - webform
+third_party_settings:
+  lightning_core:
+    internal: true
+id: webform_submission.token
+label: Token
+targetEntityType: webform_submission
+cache: true

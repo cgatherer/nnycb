@@ -1,0 +1,53 @@
+uuid: 414f30e7-9fd4-4cfc-a491-276183e0548d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bridge_navigation.field_bridge_nav_image
+    - field.field.paragraph.bridge_navigation.field_easterly
+    - field.field.paragraph.bridge_navigation.field_westerly
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.bridge_navigation
+  module:
+    - image
+    - paragraphs
+id: paragraph.bridge_navigation.default
+targetEntityType: paragraph
+bundle: bridge_navigation
+mode: default
+content:
+  field_bridge_nav_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_easterly:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_westerly:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

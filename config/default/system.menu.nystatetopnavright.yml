@@ -1,0 +1,8 @@
+uuid: 367cf9ad-a75a-4495-ba24-4072c4a3acd1
+langcode: en
+status: true
+dependencies: {  }
+id: nystatetopnavright
+label: 'Ny State Top Nav - Right'
+description: 'Site links for the state of New York'
+locked: false

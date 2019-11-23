@@ -1,0 +1,23 @@
+uuid: 327f15e6-d801-4a88-adb8-859409daef32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_inset
+    - paragraphs.paragraphs_type.complex_copy
+id: paragraph.complex_copy.field_image_inset
+field_name: field_image_inset
+entity_type: paragraph
+bundle: complex_copy
+label: 'Image inset'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

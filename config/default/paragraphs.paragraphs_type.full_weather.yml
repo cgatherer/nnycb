@@ -1,0 +1,9 @@
+uuid: 118bd8bd-f209-4155-900b-47f74370c4e3
+langcode: en
+status: true
+dependencies: {  }
+id: full_weather
+label: 'Full Weather'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

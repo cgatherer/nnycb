@@ -1,0 +1,23 @@
+uuid: 615449b7-02c9-42a2-9b3b-e05324ef472b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.lighting_slot.field_slot_date
+  module:
+    - datetime
+    - lighting_display
+_core:
+  default_config_hash: qgkrWeq-BLRN2rBUdWklk-ALvwqy8lxViHTEc2PyvIw
+id: lighting_slot.lighting_slot.field_slot_date
+field_name: field_slot_date
+entity_type: lighting_slot
+bundle: lighting_slot
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

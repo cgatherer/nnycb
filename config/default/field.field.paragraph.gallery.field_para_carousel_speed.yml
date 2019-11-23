@@ -1,0 +1,21 @@
+uuid: 386702b8-c8df-4773-879b-dd8a655db214
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_carousel_speed
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - options
+id: paragraph.gallery.field_para_carousel_speed
+field_name: field_para_carousel_speed
+entity_type: paragraph
+bundle: gallery
+label: 'Gallery speed'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

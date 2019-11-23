@@ -1,0 +1,9 @@
+uuid: 66c6022e-a36f-4d78-b0bd-425c07c53d0d
+langcode: en
+status: true
+dependencies: {  }
+id: bleed_grid_card
+label: 2up-Detail
+icon_uuid: null
+description: 'Grid arrangement of text and images bleeding to edge'
+behavior_plugins: {  }

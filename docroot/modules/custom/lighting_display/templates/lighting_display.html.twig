@@ -1,0 +1,148 @@
+{#
+/**
+ * @file lighting_display.html.twig
+ * Default theme implementation to present Lighting display data.
+ *
+ * This template is used when viewing Lighting display pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_lighting_display()
+ *
+ * @ingroup themeable
+ */
+#}
+{#
+
+use colors to load appropriate images
+so
+  white image as backround
+  overlay scheme like
+  modules/custom/lighting_display/images/[towercolor_name]_tower.png
+  modules/custom/lighting_display/images/[pier1color_name]_pier1.png
+  modules/custom/lighting_display/images/[pier1color_name]_pier2.png
+
+  pier1 and pier2 pngs alternate what they tint.
+
+  can we get the get var, or should we, in the template?
+  maybe do it in js to show thank you msg and back to form btn.
+    put markup in and make display: none. js change to display block if thanks query param present. 
+
+#}
+
+{% set towercolorclass = tower_color_name|lower|replace(' ', '-') %}
+{% set towercolorfile = '/modules/custom/lighting_display/images/towers-' ~ towercolorclass ~ '.png' %}
+{% set pier1colorclass = pier1_color_name|lower|replace(' ', '-') %}
+{% set pier1colorfile = '/modules/custom/lighting_display/images/pier1-' ~ pier1colorclass ~ '.png' %}
+{% set pier2colorclass = pier2_color_name|lower|replace(' ', '-') %}
+{% set pier2colorfile = '/modules/custom/lighting_display/images/pier2-' ~ pier2colorclass ~ '.png' %}
+
+
+
+{{ attach_library('lighting_display/lighting_display') }}
+
+<div class="no-hero full-width-row">
+  <div class="hero-title-container">
+    <div class="row">
+      <div class="col">
+        <h1 class="no-hero-title">Light The<br>Bridge</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row inset-pad">
+  <div{{ attributes.addClass('lighting-display col-xs-12') }}>
+    <div class="thanks-msg">
+      <p>Thank you for submitting your Mario M. Cuomo Bridge Lighting Display. We'll let you know if it has been accepted for presentation on the requested date.</p>
+      <div class="button-link">
+        <a class="button-arrow-blue" href="/lighting-design-tool">Submit Another</a>
+      </div>
+    </div>
+    <div id="lighting-simulation">
+      <img class="lighting-base" src="/modules/custom/lighting_display/images/base.jpg" alt="Cuomo Bridge lit all in white. Following images overlay to add color" />
+      <img style="display: block;" class="lighting-overlay towers towers-{{ towercolorclass }}" src="{{ towercolorfile }}" alt="{{ tower_color_name }}" tower color" />
+      <img style="display: block;" class="lighting-overlay pier1 pier1-{{ pier1colorclass }}" src="{{ pier1colorfile }}" alt="{{ pier1_color_name }}" pier1 color" />
+      <img style="display: block;" class="lighting-overlay pier2 pier2-{{ pier2colorclass }}" src="{{ pier2colorfile }}" alt="{{ pier2_color_name }}" pier2 color" />
+    </div>
+      {% set hdate = "Proposed Date:"  %}
+    {% if approved == true %}
+      {% set hdate = "Approved Date:"  %}
+    {% endif %}
+    <div class="row">
+      <div class="date">
+        <strong>{{ hdate }}</strong><br>
+        {{ slot_date }}
+      </div>
+      <div class="button-link">
+        <a class="button-arrow-blue" href="/lighting-calendar">See Lighting Calendar</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="colors">
+        <strong>Selected Colors:</strong>
+        <div class="selection">
+          <div class="color-label">Cables/Towers</div>
+          <div class="color">
+            <div class="color-value" style="background-color: {{ tower_hex }}"></div>
+            <div class="color-name">{{ tower_color_name }}</div>
+          </div>
+        </div>
+        <div class="selection">
+          <div class="color-label">Pier Color 1</div>
+          <div class="color">
+            <div class="color-value" style="background-color: {{ pier1_hex }}"></div>
+            <div class="color-name">{{ pier1_color_name }}</div>
+          </div>
+        </div>
+        <div class="selection">
+          <div class="color-label">Pier Color 2</div>
+          <div class="color">
+            <div class="color-value" style="background-color: {{ pier2_hex }}"></div>
+            <div class="color-name">{{ pier2_color_name }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="info">
+        <strong>Lighting Display Info:</strong>
+        <div class="info-line">
+          <div class="info-label">Submitter</div>
+          <div class="info-value">{{ lighting_display.applicant_name.value }}</div>
+        </div>
+        <div class="info-line">
+          <div class="info-label">Organization</div>
+          <div class="info-value">{{ lighting_display.applicant_org.value }}</div>
+        </div>
+        <div class="info-line">
+          <div class="info-label">Display Name</div>
+          <div class="info-value">{{ lighting_display.name.value }}</div>
+        </div>
+
+        <div class="info-line">
+          <div class="info-label">Description</div>
+          {% set desc = lighting_display.description.value %}
+          {% if desc is empty %}
+            {% set desc = '' %}
+          {% endif %}
+          <div class="info-value">{{ desc|t }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="social">
+      <strong>Share it:</strong> <a href="/{{ url }}">{{ url }}</a>
+      <!-- AddToAny BEGIN -->
+      <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+        <a class="a2a_button_facebook"></a>
+        <a class="a2a_button_twitter"></a>
+        <a class="a2a_button_email"></a>
+      </div>
+      <!-- AddToAny END -->
+    </div>
+  </div>
+</div>

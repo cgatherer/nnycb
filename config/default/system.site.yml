@@ -1,0 +1,14 @@
+uuid: 841fe941-18cd-4b7b-9d14-5069eb360eb0
+name: 'Mario Cuomo Bridge'
+mail: no-reply@acquia.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

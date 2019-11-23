@@ -1,0 +1,9 @@
+uuid: 5fc7a239-869f-4034-a7d4-bbf2f701d402
+langcode: en
+status: true
+dependencies: {  }
+id: card_detail
+label: 'Card detail'
+icon_uuid: null
+description: 'Sub-paragraph: Title and value for card detail'
+behavior_plugins: {  }

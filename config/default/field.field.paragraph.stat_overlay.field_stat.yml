@@ -1,0 +1,19 @@
+uuid: c5b21031-bd32-4b0c-83d2-3dd2ed443f8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_stat
+    - paragraphs.paragraphs_type.stat_overlay
+id: paragraph.stat_overlay.field_stat
+field_name: field_stat
+entity_type: paragraph
+bundle: stat_overlay
+label: Stat
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

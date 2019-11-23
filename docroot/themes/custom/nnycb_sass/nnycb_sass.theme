@@ -1,0 +1,251 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\menu_link_content\Plugin\Menu\MenuLinkContent;
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ */
+function nnycb_sass_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
+      'bg-primary' => t('Primary'),
+      'bg-secondary' => t('Secondary'),
+      'bg-light' => t('Light'),
+      'bg-dark' => t('Dark'),
+      'bg-white' => t('White'),
+      'bg-transparent' => t('Transparent'),
+  );
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = array(
+      'bg-primary' => t('Primary'),
+      'bg-secondary' => t('Secondary'),
+      'bg-light' => t('Light'),
+      'bg-dark' => t('Dark'),
+      'bg-white' => t('White'),
+      'bg-transparent' => t('Transparent'),
+  );
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function nnycb_sass_preprocess_page(&$variables) {
+  if ($variables['is_front']) {
+    $status_config = \Drupal::config('nnycb_helpers.status');
+    $path_is_closed = $status_config->get('path_is_closed');
+    $sunrise = $status_config->get('sunrise');
+    $sunset = $status_config->get('sunset');
+
+    $variables['#attached']['drupalSettings']['bridge_status']['path_is_closed'] = $path_is_closed;
+    $variables['#attached']['drupalSettings']['bridge_status']['sunrise'] = $sunrise;
+    $variables['#attached']['drupalSettings']['bridge_status']['sunset'] = $sunset;
+  }
+}
+
+/**
+* Implements hook_preprocess_node() for NODE document templates.
+*/
+function nnycb_sass_preprocess_node(&$variables) {
+  // Allowed view modes
+  $view_mode = $variables['view_mode']; // Retrieve view mode
+  $allowed_view_modes = ['full']; // Array of allowed view modes (for performance so as to not execute on unneeded nodes)
+ 
+  // If view mode is in allowed view modes list, pass to THEME_add_regions_to_node()
+  if(in_array($view_mode, $allowed_view_modes)) {
+    // Allowed regions (for performance so as to not execute for unneeded region)
+    $allowed_regions = ['breadcrumb'];
+    nnycb_sass_add_regions_to_node($allowed_regions, $variables);
+  }
+  $nid = $variables['node']->id();
+  $menu_link_manager = \Drupal::service('plugin.manager.menu.link');
+  $links = $menu_link_manager->loadLinksByRoute('entity.node.canonical', array('node' => $nid));
+  if ($link = reset($links)) {
+    if ($parent = $link->getParent()) {
+      $parent = $menu_link_manager->createInstance($parent);
+      $parent_title = $parent->getTitle();
+      $parent_url = $parent->getUrlObject()->toString();
+      $variables['#attached']['drupalSettings']['nnycb']['node_main_parent_url'] = $parent_url;
+    }
+  }
+
+}
+ 
+/**
+* THEME_add_regions_to_node
+*/
+ 
+function nnycb_sass_add_regions_to_node($allowed_regions, &$variables) {
+  // Retrieve active theme
+  $theme = \Drupal::theme()->getActiveTheme()->getName();
+ 
+  // Retrieve theme regions
+  $available_regions = system_region_list($theme, 'REGIONS_ALL');
+ 
+  // Validate allowed regions with available regions
+  $regions = array_intersect(array_keys($available_regions), $allowed_regions);
+ 
+  // For each region
+  foreach ($regions as $key => $region) {
+ 
+    // Load region blocks
+    $blocks = entity_load_multiple_by_properties('block', array('theme' => $theme, 'region' => $region));
+ 
+    // Sort ‘em
+    uasort($blocks, 'Drupal\block\Entity\Block::sort');
+ 
+    // Capture viewable blocks and their settings to $build
+    $build = array();
+    foreach ($blocks as $key => $block) {
+      if ($block->access('view')) {
+        $build[$key] = entity_view($block, 'block');
+      }
+    }
+ 
+    // Add build to region
+    $variables[$region] = $build;
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ */
+function nnycb_sass_preprocess_html(&$variables) {
+
+  /** @var \Drupal\lighting_display\Entity\LightingDisplay $ld */
+   if ($ld = \Drupal::routeMatch()->getParameter('lighting_display')) {
+     $tower_color = str_replace(' ', '-', strtolower(explode('|', $ld->getTowerColor())[0]));
+     $pier1_color = str_replace(' ', '-', strtolower(explode('|', $ld->getPierColor1())[0]));
+     $pier2_color = str_replace(' ', '-', strtolower(explode('|', $ld->getPierColor2())[0]));
+
+     $display_img = $tower_color . '_' . $pier1_color . '_' . $pier2_color . '.jpg';
+
+     $request = \Drupal::request();
+
+     $ogimage = [];
+     $ogimage['url'] = $request->getRequestUri();
+     $ogimage['img'] = $display_img;
+     $ogimage['title'] = $ld->getName();
+
+     $desc = $ld->getDescription();
+     if ($desc) {
+       $ogimage['desc'] = $desc;
+     }
+
+     _nnycb_sass_og_image_populate($variables, $ogimage);
+
+  } else if ($node = \Drupal::routeMatch()->getParameter('node')) {
+
+     $request = \Drupal::request();
+
+     $towers = $request->query->get('towers');
+     if (!empty($towers)) {
+       $pier1 = $request->query->get('pier1');
+       if (!empty($pier1)) {
+         $pier2 = $request->query->get('pier2');
+         if (!empty($pier2)) {
+           $display_img = $towers . '_' . $pier1 . '_' . $pier2 . '.jpg';
+
+           $ogimage = [];
+           $ogimage['url'] = $request->getRequestUri();
+           $ogimage['img'] = $display_img;
+           $ogimage['title'] = $request->query->get('name');
+
+           _nnycb_sass_og_image_populate($variables, $ogimage);
+         }
+       }
+     }
+     $variables['#cache']['contexts'][] = 'url.query_args';
+   }
+}
+
+
+/**
+ * helper to fill open graph image metatags for header
+ *
+ * @param array $variables
+ * @param array $ogimage
+ */
+function _nnycb_sass_og_image_populate(&$variables, $ogimage) {
+
+  global $base_url;
+  $staticpath = '/sites/default/files/static_lighting/';
+  $img = $base_url . $staticpath .  $ogimage['img'];
+
+  $url = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'property' => 'og:url',
+      'content' => $base_url . $ogimage['url'],
+    ],
+  ];
+  $image = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'property' => 'og:image',
+      'content' => str_replace('https:', 'http:', $img),
+    ],
+  ];
+  $image_secure = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'property' => 'og:image:secure_url',
+      'content' => $img,
+    ],
+  ];
+  $image_width = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'property' => 'og:image:width',
+      'content' => 2000,
+    ],
+  ];
+  $image_height = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'property' => 'og:image:height',
+      'content' => 1120,
+    ],
+  ];
+  $title = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'og:title',
+      'content' => $ogimage['title'] . ' | Cuomo Bridge Lighting Display',
+    ],
+  ];
+  $twitter_card = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'twitter:card',
+      'content' => 'summary_large_image',
+    ],
+  ];
+
+  $variables['page']['#attached']['html_head'][] = [$title, 'og:title'];
+  $variables['page']['#attached']['html_head'][] = [$url, 'og:url'];
+  $variables['page']['#attached']['html_head'][] = [$image, 'og:image'];
+  $variables['page']['#attached']['html_head'][] = [$image_secure, 'og:image:secure_url'];
+  $variables['page']['#attached']['html_head'][] = [$image_width, 'og:image:width'];
+  $variables['page']['#attached']['html_head'][] = [$image_height, 'og:image:height'];
+
+  $variables['page']['#attached']['html_head'][] = [$twitter_card, 'twitter:card'];
+
+  if (isset($ogimage['desc'])) {
+    $desc = [
+      '#tag' => 'meta',
+      '#attributes' => [
+        'name' => 'og:description',
+        'content' => $ogimage['desc'],
+      ],
+    ];
+    $variables['page']['#attached']['html_head'][] = [$desc, 'og:description'];
+  }
+
+}

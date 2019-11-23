@@ -1,0 +1,22 @@
+uuid: cf8f5da4-b8fd-48be-885e-3cdc3500fdbe
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - nnycb_sass
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: nnycb_sass_help
+theme: nnycb_sass
+region: content
+weight: -10
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

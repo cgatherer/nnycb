@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains lighting_display.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function lighting_display_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the lighting_display module.
+    case 'help.page.lighting_display':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Bridge Lighting Display content types, forms, views, config, etc') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function lighting_display_theme() {
+  $theme['lighting_display'] = array(
+    'render element' => 'elements',
+    'file' => 'lighting_display.page.inc',
+    'template' => 'lighting_display',
+  );
+  return $theme;
+}

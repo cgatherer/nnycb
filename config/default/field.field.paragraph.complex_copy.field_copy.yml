@@ -1,0 +1,21 @@
+uuid: 928f35f6-7c29-4d58-858c-2e3402b414f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_copy
+    - paragraphs.paragraphs_type.complex_copy
+  module:
+    - text
+id: paragraph.complex_copy.field_copy
+field_name: field_copy
+entity_type: paragraph
+bundle: complex_copy
+label: Copy
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,97 @@
+uuid: 5eb7fd8f-9729-4b33-883f-99b5fefc514c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_details
+    - paragraphs.paragraphs_type.detail
+    - paragraphs.paragraphs_type.info_item
+  module:
+    - entity_reference_revisions
+id: paragraph.info_item.field_details
+field_name: field_details
+entity_type: paragraph
+bundle: info_item
+label: Details
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      detail: detail
+    target_bundles_drag_drop:
+      accordion:
+        weight: 24
+        enabled: false
+      accordion_item:
+        weight: 25
+        enabled: false
+      bleed_card:
+        weight: 26
+        enabled: false
+      bleed_grid_card:
+        weight: 27
+        enabled: false
+      block:
+        weight: 28
+        enabled: false
+      bridge_navigation:
+        weight: 29
+        enabled: false
+      card:
+        weight: 30
+        enabled: false
+      card_detail:
+        weight: 31
+        enabled: false
+      card_statistic:
+        weight: 32
+        enabled: false
+      carousel_image:
+        weight: 33
+        enabled: false
+      complex_copy:
+        weight: 34
+        enabled: false
+      detail:
+        enabled: true
+        weight: 35
+      gallery:
+        weight: 36
+        enabled: false
+      gallery_image:
+        weight: 37
+        enabled: false
+      grid_card:
+        weight: 38
+        enabled: false
+      info_item:
+        weight: 39
+        enabled: false
+      overlook_link:
+        weight: 40
+        enabled: false
+      simple_copy:
+        weight: 41
+        enabled: false
+      stat:
+        weight: 42
+        enabled: false
+      stat_card:
+        weight: 43
+        enabled: false
+      stat_overlay:
+        weight: 44
+        enabled: false
+      video:
+        weight: 45
+        enabled: false
+      webform:
+        weight: 46
+        enabled: false
+field_type: entity_reference_revisions

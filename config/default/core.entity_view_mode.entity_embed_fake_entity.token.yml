@@ -1,0 +1,14 @@
+uuid: 39bb8b8f-8cc5-4e26-a251-b0ab1cc794c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_embed
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    internal: true
+id: entity_embed_fake_entity.token
+label: Token
+targetEntityType: entity_embed_fake_entity
+cache: true

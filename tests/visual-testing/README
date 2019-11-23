@@ -1,0 +1,16 @@
+Visual Regression Testing using BackstopJS
+
+For now, against pantheon
+
+config files:
+shared/live-links.json defines pages to test
+shared/viewports.js defines viewports/breakpoints
+dev.js sets dev to test against ptheon multidev env as reference
+local.js sets local to test against dev env as reference
+ptheon.js sets local to test against ptheon multidev env as reference
+
+run like:
+
+lando npm run reference-dev # gets reference bitmaps from dev env
+lando npm run test-dev # gets test bitmaps from ptheon env
+. openreport # launch report in browser

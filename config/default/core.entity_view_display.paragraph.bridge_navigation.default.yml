@@ -1,0 +1,46 @@
+uuid: 2af9409b-2c22-4295-8ff1-47824dfdc511
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bridge_navigation.field_bridge_nav_image
+    - field.field.paragraph.bridge_navigation.field_easterly
+    - field.field.paragraph.bridge_navigation.field_westerly
+    - image.style.max_1000
+    - paragraphs.paragraphs_type.bridge_navigation
+  module:
+    - entity_reference_revisions
+    - image
+id: paragraph.bridge_navigation.default
+targetEntityType: paragraph
+bundle: bridge_navigation
+mode: default
+content:
+  field_bridge_nav_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: max_1000
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_easterly:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_westerly:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

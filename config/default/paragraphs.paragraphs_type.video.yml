@@ -1,0 +1,9 @@
+uuid: 7792f4a4-a694-4a44-a15f-f461bc8c4194
+langcode: en
+status: true
+dependencies: {  }
+id: video
+label: Video
+icon_uuid: null
+description: 'Youtube or Vimeo video share url'
+behavior_plugins: {  }

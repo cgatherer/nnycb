@@ -1,0 +1,31 @@
+uuid: 34a91f9f-0efe-4e6c-84f3-56815508e36a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:879d7c0e-b8fc-4109-9dc3-a030190af19f'
+  module:
+    - block_content
+    - system
+  theme:
+    - nnycb_sass
+id: newssection
+theme: nnycb_sass
+region: featured_bottom_first
+weight: -11
+provider: null
+plugin: 'block_content:879d7c0e-b8fc-4109-9dc3-a030190af19f'
+settings:
+  id: 'block_content:879d7c0e-b8fc-4109-9dc3-a030190af19f'
+  label: 'News Section'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

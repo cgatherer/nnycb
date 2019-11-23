@@ -1,0 +1,33 @@
+uuid: 2de6cb19-724d-4d79-bd25-676c7092ad77
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_layout
+field_name: field_layout
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: 'Image Inset'
+    -
+      value: '1'
+      label: 'Image Bleed'
+    -
+      value: '2'
+      label: 'Image Full'
+    -
+      value: '3'
+      label: Intro
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

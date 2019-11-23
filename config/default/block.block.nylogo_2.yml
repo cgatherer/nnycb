@@ -1,0 +1,20 @@
+uuid: 65dc8f01-eac6-4d6e-b0a5-bd60fb963cc1
+langcode: en
+status: true
+dependencies:
+  module:
+    - nnycb_helpers
+  theme:
+    - nnycb_sass
+id: nylogo_2
+theme: nnycb_sass
+region: secondary_menu
+weight: -7
+provider: null
+plugin: ny_logo_block
+settings:
+  id: ny_logo_block
+  label: 'NY Logo'
+  provider: nnycb_helpers
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 0ca3aa25-38b3-4bed-989c-15d9c70ad0cd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:beddf072-b8f5-424a-8ddc-030ba8b9dfdd'
+  module:
+    - block_content
+  theme:
+    - nnycb_sass
+id: thisisatest
+theme: nnycb_sass
+region: breadcrumb
+weight: -12
+provider: null
+plugin: 'block_content:beddf072-b8f5-424a-8ddc-030ba8b9dfdd'
+settings:
+  id: 'block_content:beddf072-b8f5-424a-8ddc-030ba8b9dfdd'
+  label: 'This is a test'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

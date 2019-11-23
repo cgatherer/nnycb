@@ -1,0 +1,6 @@
+nnycb_helpers.bridge_status_form:
+  title: 'Bridge Status'
+  route_name: nnycb_helpers.bridge_status_form
+  description: 'Manually set Bridge Status'
+  parent: system.admin_config_system
+  weight: 99

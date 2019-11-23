@@ -1,0 +1,9 @@
+uuid: a572bf9d-0e1c-4f76-b5b3-fac491a09759
+langcode: en
+status: true
+dependencies: {  }
+id: complex_copy
+label: Copy-Complex
+icon_uuid: null
+description: 'Title, copy, link, container color, image, stats/details'
+behavior_plugins: {  }

@@ -1,0 +1,30 @@
+uuid: c90a2c55-abdb-4d28-99c7-59eb3efb3508
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_and_events
+  module:
+    - system
+    - views
+  theme:
+    - nnycb_sass
+id: views_block__news_and_events_block_2
+theme: nnycb_sass
+region: featured_bottom_first
+weight: -10
+provider: null
+plugin: 'views_block:news_and_events-block_2'
+settings:
+  id: 'views_block:news_and_events-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

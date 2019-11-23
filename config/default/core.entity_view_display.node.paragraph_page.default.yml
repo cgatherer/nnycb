@@ -1,0 +1,84 @@
+uuid: b114cf66-651c-4e2d-b778-8697aadb01e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.paragraph_page.body
+    - field.field.node.paragraph_page.field_files
+    - field.field.node.paragraph_page.field_hero_image
+    - field.field.node.paragraph_page.field_hero_title
+    - field.field.node.paragraph_page.field_meta_tags
+    - field.field.node.paragraph_page.field_paragraphs
+    - node.type.paragraph_page
+    - responsive_image.styles.hero
+  module:
+    - entity_reference_revisions
+    - file
+    - metatag
+    - responsive_image
+    - text
+    - user
+id: node.paragraph_page.default
+targetEntityType: node
+bundle: paragraph_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_files:
+    weight: 106
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_hero_image:
+    weight: 103
+    label: hidden
+    settings:
+      responsive_image_style: hero
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_hero_title:
+    weight: 102
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_meta_tags:
+    weight: 105
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 104
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,33 @@
+uuid: afc18e86-214f-4578-9c56-60735c566252
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.iconographic.field_icon_sets
+    - field.field.paragraph.iconographic.field_title
+    - paragraphs.paragraphs_type.iconographic
+  module:
+    - entity_reference_revisions
+id: paragraph.iconographic.default
+targetEntityType: paragraph
+bundle: iconographic
+mode: default
+content:
+  field_icon_sets:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

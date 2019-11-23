@@ -1,0 +1,28 @@
+
+# Lighting display menu items definition
+entity.lighting_display.collection:
+  title: 'Lighting display list'
+  route_name: entity.lighting_display.collection
+  description: 'List Lighting display entities'
+  parent: system.admin_structure
+  weight: 100
+
+lighting_display.admin.structure.settings:
+  title: 'Lighting display settings'
+  description: 'Configure Lighting display entities'
+  route_name: lighting_display.settings
+  parent: system.admin_structure
+
+# Lighting slot menu items definition
+entity.lighting_slot.collection:
+  title: 'Lighting slot list'
+  route_name: entity.lighting_slot.collection
+  description: 'List Lighting slot entities'
+  parent: system.admin_structure
+  weight: 100
+
+lighting_slot.admin.structure.settings:
+  title: 'Lighting slot settings'
+  description: 'Configure Lighting slot entities'
+  route_name: lighting_slot.settings
+  parent: system.admin_structure

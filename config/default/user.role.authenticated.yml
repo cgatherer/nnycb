@@ -1,0 +1,53 @@
+uuid: db741c0c-7781-4ab6-bcb6-9b8438b5338e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view display entities'
+  - 'view lighting display entities'
+  - 'view paragraph content accordion'
+  - 'view paragraph content accordion_item'
+  - 'view paragraph content bleed_card'
+  - 'view paragraph content bleed_grid_card'
+  - 'view paragraph content block'
+  - 'view paragraph content bridge_navigation'
+  - 'view paragraph content bridge_status'
+  - 'view paragraph content card'
+  - 'view paragraph content card_detail'
+  - 'view paragraph content card_statistic'
+  - 'view paragraph content carousel'
+  - 'view paragraph content carousel_image'
+  - 'view paragraph content complex_copy'
+  - 'view paragraph content detail'
+  - 'view paragraph content divider'
+  - 'view paragraph content full_weather'
+  - 'view paragraph content gallery'
+  - 'view paragraph content gallery_image'
+  - 'view paragraph content grid_card'
+  - 'view paragraph content icon'
+  - 'view paragraph content icon_set'
+  - 'view paragraph content iconographic'
+  - 'view paragraph content image'
+  - 'view paragraph content info_item'
+  - 'view paragraph content info_list'
+  - 'view paragraph content overlook_link'
+  - 'view paragraph content simple_copy'
+  - 'view paragraph content stat'
+  - 'view paragraph content stat_card'
+  - 'view paragraph content stat_overlay'
+  - 'view paragraph content tab'
+  - 'view paragraph content video'
+  - 'view paragraph content webform'

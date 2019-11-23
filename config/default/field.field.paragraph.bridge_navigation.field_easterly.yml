@@ -1,0 +1,88 @@
+uuid: c9f0ec5d-53c6-43f3-a23f-345be6d92bb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_easterly
+    - paragraphs.paragraphs_type.bridge_navigation
+    - paragraphs.paragraphs_type.overlook_link
+  module:
+    - entity_reference_revisions
+id: paragraph.bridge_navigation.field_easterly
+field_name: field_easterly
+entity_type: paragraph
+bundle: bridge_navigation
+label: Easterly
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      overlook_link: overlook_link
+    target_bundles_drag_drop:
+      bleed_card:
+        weight: 21
+        enabled: false
+      bleed_grid_card:
+        weight: 22
+        enabled: false
+      block:
+        weight: 23
+        enabled: false
+      bridge_navigation:
+        weight: 24
+        enabled: false
+      card:
+        weight: 25
+        enabled: false
+      card_detail:
+        weight: 26
+        enabled: false
+      card_statistic:
+        weight: 27
+        enabled: false
+      carousel_image:
+        weight: 28
+        enabled: false
+      complex_copy:
+        weight: 29
+        enabled: false
+      detail:
+        weight: 30
+        enabled: false
+      gallery:
+        weight: 31
+        enabled: false
+      gallery_image:
+        weight: 32
+        enabled: false
+      grid_card:
+        weight: 33
+        enabled: false
+      overlook_link:
+        enabled: true
+        weight: 34
+      simple_copy:
+        weight: 35
+        enabled: false
+      stat:
+        weight: 36
+        enabled: false
+      stat_card:
+        weight: 37
+        enabled: false
+      stat_overlay:
+        weight: 38
+        enabled: false
+      video:
+        weight: 39
+        enabled: false
+      webform:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

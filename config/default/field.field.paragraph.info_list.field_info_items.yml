@@ -1,0 +1,100 @@
+uuid: b1cbbaed-09a0-4b1f-9348-764045da9373
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_info_items
+    - paragraphs.paragraphs_type.info_item
+    - paragraphs.paragraphs_type.info_list
+  module:
+    - entity_reference_revisions
+id: paragraph.info_list.field_info_items
+field_name: field_info_items
+entity_type: paragraph
+bundle: info_list
+label: Items
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      info_item: info_item
+    target_bundles_drag_drop:
+      info_list:
+        weight: 25
+        enabled: false
+      accordion:
+        weight: 26
+        enabled: false
+      accordion_item:
+        weight: 27
+        enabled: false
+      bleed_card:
+        weight: 28
+        enabled: false
+      bleed_grid_card:
+        weight: 29
+        enabled: false
+      block:
+        weight: 30
+        enabled: false
+      bridge_navigation:
+        weight: 31
+        enabled: false
+      card:
+        weight: 32
+        enabled: false
+      card_detail:
+        weight: 33
+        enabled: false
+      card_statistic:
+        weight: 34
+        enabled: false
+      carousel_image:
+        weight: 35
+        enabled: false
+      complex_copy:
+        weight: 36
+        enabled: false
+      detail:
+        weight: 37
+        enabled: false
+      gallery:
+        weight: 38
+        enabled: false
+      gallery_image:
+        weight: 39
+        enabled: false
+      grid_card:
+        weight: 40
+        enabled: false
+      info_item:
+        enabled: true
+        weight: 41
+      overlook_link:
+        weight: 42
+        enabled: false
+      simple_copy:
+        weight: 43
+        enabled: false
+      stat:
+        weight: 44
+        enabled: false
+      stat_card:
+        weight: 45
+        enabled: false
+      stat_overlay:
+        weight: 46
+        enabled: false
+      video:
+        weight: 47
+        enabled: false
+      webform:
+        weight: 48
+        enabled: false
+field_type: entity_reference_revisions

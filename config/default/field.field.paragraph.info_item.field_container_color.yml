@@ -1,0 +1,21 @@
+uuid: a1d583fa-0c9a-4a87-b390-e1cdca535dd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_container_color
+    - paragraphs.paragraphs_type.info_item
+  module:
+    - options
+id: paragraph.info_item.field_container_color
+field_name: field_container_color
+entity_type: paragraph
+bundle: info_item
+label: 'Container color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

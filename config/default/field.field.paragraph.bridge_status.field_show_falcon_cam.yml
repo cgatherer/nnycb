@@ -1,0 +1,23 @@
+uuid: 832e763a-1559-4006-954b-b749c5532900
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_show_falcon_cam
+    - paragraphs.paragraphs_type.bridge_status
+id: paragraph.bridge_status.field_show_falcon_cam
+field_name: field_show_falcon_cam
+entity_type: paragraph
+bundle: bridge_status
+label: 'Show falcon cam'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,66 @@
+palettes:
+  standard:
+    -
+      name: White
+      hex: '#e6ffff'
+    -
+      name: Pink
+      hex: '#fe37aa'
+    -
+      name: Purple
+      hex: '#765aa3'
+    -
+      name: Blue
+      hex: '#0000ff'
+    -
+      name: Blue-Green
+      hex: '#11ffdc'
+    -
+      name: 'Mint Green'
+      hex: '#00ff8c'
+    -
+      name: 'Dark Green'
+      hex: '#498551'
+    -
+      name: Green
+      hex: '#00ff2b'
+    -
+      name: Yellow
+      hex: '#ffff00'
+    -
+      name: Orange
+      hex: '#f8a235'
+    -
+      name: 'Dark Orange'
+      hex: '#e36b00'
+    -
+      name: Red-Orange
+      hex: '#f96012'
+    -
+      name: Red
+      hex: '#ff0000'
+  migration:
+    -
+      name: White
+      hex: '#a6ffff'
+    -
+      name: Pink
+      hex: '#fe37aa'
+    -
+      name: Purple
+      hex: '#765aa3'
+    -
+      name: Blue
+      hex: '#0000ff'
+    -
+      name: Blue-Green
+      hex: '#11ffdc'
+    -
+      name: 'Mint Green'
+      hex: '#00ff8c'
+    -
+      name: 'Dark Green'
+      hex: '#498551'
+    -
+      name: Green
+      hex: '#00ff2b'

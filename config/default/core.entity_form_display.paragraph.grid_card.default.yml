@@ -1,0 +1,66 @@
+uuid: 9f7bc47c-d7ea-4ace-8318-333eb707f0a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.grid_card.field_grid_copy
+    - field.field.paragraph.grid_card.field_grid_images
+    - field.field.paragraph.grid_card.field_stat_overlay
+    - field.field.paragraph.grid_card.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.grid_card
+  module:
+    - image
+    - paragraphs
+    - text
+id: paragraph.grid_card.default
+targetEntityType: paragraph
+bundle: grid_card
+mode: default
+content:
+  field_grid_copy:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_grid_images:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_stat_overlay:
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: stat
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

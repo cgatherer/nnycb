@@ -1,0 +1,21 @@
+uuid: e616cd0c-b0e1-4a8a-b6b0-4fa5bfa2056a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_copy_text_size
+    - paragraphs.paragraphs_type.complex_copy
+  module:
+    - options
+id: paragraph.complex_copy.field_copy_text_size
+field_name: field_copy_text_size
+entity_type: paragraph
+bundle: complex_copy
+label: 'Copy text size'
+description: 'Only used with Intro Layout'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

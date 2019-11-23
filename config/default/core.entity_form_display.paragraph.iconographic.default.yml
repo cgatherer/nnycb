@@ -1,0 +1,50 @@
+uuid: 272dd6d8-c11d-4cf0-a95a-3dce08fdec23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.iconographic.field_icon_sets
+    - field.field.paragraph.iconographic.field_title
+    - paragraphs.paragraphs_type.iconographic
+  module:
+    - paragraphs
+    - paragraphs_features
+id: paragraph.iconographic.default
+targetEntityType: paragraph
+bundle: iconographic
+mode: default
+content:
+  field_icon_sets:
+    type: paragraphs
+    weight: 1
+    settings:
+      title: 'Icon set'
+      title_plural: 'Icon sets'
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: icon_set
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+    third_party_settings:
+      paragraphs_features:
+        delete_confirmation: false
+        add_in_between: false
+        split_text: false
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

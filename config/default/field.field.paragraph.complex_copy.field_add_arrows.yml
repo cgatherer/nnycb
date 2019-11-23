@@ -1,0 +1,21 @@
+uuid: 6406552a-81a2-4230-93d5-b1afd41e70b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_add_arrows
+    - paragraphs.paragraphs_type.complex_copy
+  module:
+    - options
+id: paragraph.complex_copy.field_add_arrows
+field_name: field_add_arrows
+entity_type: paragraph
+bundle: complex_copy
+label: 'Highlight text arrow'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

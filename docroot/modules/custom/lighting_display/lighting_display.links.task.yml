@@ -1,0 +1,48 @@
+# Lighting display routing definition
+lighting_display.settings_tab:
+  route_name: lighting_display.settings
+  title: 'Settings'
+  base_route: lighting_display.settings
+
+entity.lighting_display.canonical:
+  route_name: entity.lighting_display.canonical
+  base_route: entity.lighting_display.canonical
+  title: 'View'
+
+entity.lighting_display.edit_form:
+  route_name: entity.lighting_display.edit_form
+  base_route: entity.lighting_display.canonical
+  title: 'Edit'
+
+entity.lighting_display.delete_form:
+  route_name:  entity.lighting_display.delete_form
+  base_route:  entity.lighting_display.canonical
+  title: Delete
+  weight: 10
+# Lighting slot routing definition
+lighting_slot.settings_tab:
+  route_name: lighting_slot.settings
+  title: 'Settings'
+  base_route: lighting_slot.settings
+
+entity.lighting_slot.canonical:
+  route_name: entity.lighting_slot.canonical
+  base_route: entity.lighting_slot.canonical
+  title: 'View'
+
+entity.lighting_slot.edit_form:
+  route_name: entity.lighting_slot.edit_form
+  base_route: entity.lighting_slot.canonical
+  title: 'Edit'
+
+entity.lighting_slot.delete_form:
+  route_name:  entity.lighting_slot.delete_form
+  base_route:  entity.lighting_slot.canonical
+  title: Delete
+  weight: 10
+
+lighting_display.lighting_calendar_admin:
+  title: Lighting Calendar
+  route_name: view.lighting_display_calendar.page_1
+  base_route: system.admin_content
+  weight: 10

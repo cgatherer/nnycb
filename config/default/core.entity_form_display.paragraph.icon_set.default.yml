@@ -1,0 +1,50 @@
+uuid: 4630481a-c70c-454d-b341-1848492e3868
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icon_set.field_icons
+    - field.field.paragraph.icon_set.field_title
+    - paragraphs.paragraphs_type.icon_set
+  module:
+    - paragraphs
+    - paragraphs_features
+id: paragraph.icon_set.default
+targetEntityType: paragraph
+bundle: icon_set
+mode: default
+content:
+  field_icons:
+    type: paragraphs
+    weight: 1
+    settings:
+      title: Icon
+      title_plural: Icons
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: icon
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+    third_party_settings:
+      paragraphs_features:
+        delete_confirmation: false
+        add_in_between: false
+        split_text: false
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

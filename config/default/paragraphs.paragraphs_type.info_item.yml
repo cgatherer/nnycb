@@ -1,0 +1,9 @@
+uuid: 5b2712f4-15e0-494a-84e3-6291b7690e7b
+langcode: en
+status: true
+dependencies: {  }
+id: info_item
+label: 'Info item'
+icon_uuid: null
+description: 'Element of Info list paragraph'
+behavior_plugins: {  }

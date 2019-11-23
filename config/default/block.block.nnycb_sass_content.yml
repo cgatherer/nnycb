@@ -1,0 +1,22 @@
+uuid: cfb36171-c7f8-4307-b7bd-065f45caec0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nnycb_sass
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: nnycb_sass_content
+theme: nnycb_sass
+region: content
+weight: -8
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

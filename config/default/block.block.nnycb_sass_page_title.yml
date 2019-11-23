@@ -1,0 +1,20 @@
+uuid: bfcf1c2a-2fdb-445f-8244-395dc3ded42a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nnycb_sass
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: nnycb_sass_page_title
+theme: nnycb_sass
+region: content
+weight: -12
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

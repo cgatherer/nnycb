@@ -1,0 +1,12 @@
+name: jQuery UI Menu
+type: module
+description: 'Provides jQuery UI Menu library.'
+package: jQuery UI
+core: 8.x
+dependencies:
+  - jquery_ui:jquery_ui
+
+# Information added by Drupal.org packaging script on 2019-09-17
+version: '8.x-1.0'
+project: 'jquery_ui_menu'
+datestamp: 1568758690

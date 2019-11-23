@@ -1,0 +1,19 @@
+uuid: a7d1a2fd-6ffc-4b1e-8ae0-8e66e23a4ca2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.grid_card
+id: paragraph.grid_card.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: grid_card
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

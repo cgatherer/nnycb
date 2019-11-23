@@ -1,0 +1,39 @@
+global-styling:
+  version: VERSION
+  js: 
+    js/bootstrap.min.js: {}
+    js/global.js: {}
+    js/popper.min.js: {}
+    https://kit.fontawesome.com/3f0235b677.js: {}
+    https://platform.twitter.com/widgets.js: {}
+  css:
+    component:
+      css/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+is-bridge-open:
+  version: VERSION
+  js:
+    js/open.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+simple-weather:
+  version: VERSION
+  js:
+    js/weather.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+full-weather:
+  version: VERSION
+  js:
+    js/fullweather.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

@@ -1,0 +1,19 @@
+uuid: ca1339e3-0fa2-4f76-b64e-c958a6eceffd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.bleed_grid_card
+id: paragraph.bleed_grid_card.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: bleed_grid_card
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

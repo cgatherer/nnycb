@@ -1,0 +1,30 @@
+name: SASS Bootstrap Starter Kit Subtheme
+type: theme
+description: 'SASS starter kit for a Bootstrap Barrio SubTheme.'
+# version: VERSION
+# core: 8.x
+base theme: bootstrap_barrio
+
+libraries:
+  - nnycb_sass/global-styling
+libraries-override:
+  bootstrap_barrio/global-styling: false
+regions:
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  highlighted: Highlighted
+  breadcrumb: 'Breadcrumb'
+  page_top: 'Page top'
+  content: 'Content'
+  page_bottom: 'Page bottom'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_fourth: 'Footer fourth'
+  footer_fifth: 'Footer fifth'
+
+# Information added by Drupal.org packaging script on 2019-02-25
+version: '8.x-1.9'
+core: '8.x'
+project: 'nnycb_sass'
+datestamp: 1551065297

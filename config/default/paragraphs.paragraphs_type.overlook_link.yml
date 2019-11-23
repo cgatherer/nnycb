@@ -1,0 +1,9 @@
+uuid: 636bccd4-baf2-43ca-93c2-e178185a7138
+langcode: en
+status: true
+dependencies: {  }
+id: overlook_link
+label: 'Overlook link'
+icon_uuid: null
+description: 'Element of Bridge Navigation paragraph'
+behavior_plugins: {  }

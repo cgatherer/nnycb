@@ -1,0 +1,27 @@
+uuid: 4a605c44-4a91-46f5-8685-d42d0650a9e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_card_orientation
+field_name: field_card_orientation
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: image-right
+      label: 'Image right'
+    -
+      value: image-left
+      label: 'Image left'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

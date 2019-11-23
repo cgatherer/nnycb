@@ -1,0 +1,21 @@
+uuid: 0b692fe5-8fa6-4127-a11c-59d26c617211
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_copy
+    - paragraphs.paragraphs_type.card_statistic
+  module:
+    - text
+id: paragraph.card_statistic.field_copy
+field_name: field_copy
+entity_type: paragraph
+bundle: card_statistic
+label: Value
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

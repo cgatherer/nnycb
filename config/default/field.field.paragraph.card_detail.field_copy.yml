@@ -1,0 +1,21 @@
+uuid: 9fe7788d-893b-4c17-b56b-b9fcbb5c844f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_copy
+    - paragraphs.paragraphs_type.card_detail
+  module:
+    - text
+id: paragraph.card_detail.field_copy
+field_name: field_copy
+entity_type: paragraph
+bundle: card_detail
+label: Value
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,9 @@
+uuid: 8ed577f1-8b5b-4483-8d09-d61dd8eb85b5
+langcode: en
+status: true
+dependencies: {  }
+id: carousel_image
+label: 'Carousel image'
+icon_uuid: null
+description: 'Sub-paragraph: Image with optional text and button overlay for carousel'
+behavior_plugins: {  }

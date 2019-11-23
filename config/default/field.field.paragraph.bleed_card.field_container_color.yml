@@ -1,0 +1,23 @@
+uuid: 42f2fe1e-ab3d-4a4d-a23a-f3173bb5e420
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_container_color
+    - paragraphs.paragraphs_type.bleed_card
+  module:
+    - options
+id: paragraph.bleed_card.field_container_color
+field_name: field_container_color
+entity_type: paragraph
+bundle: bleed_card
+label: 'Container color'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '#F4F4F4'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

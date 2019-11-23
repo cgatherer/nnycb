@@ -1,0 +1,26 @@
+uuid: ce2c656f-041e-4ba4-96ed-52bfff1f85de
+langcode: en
+status: true
+dependencies:
+  module:
+    - nnycb_helpers
+    - system
+  theme:
+    - nnycb_sass
+id: twitterfeedfrontpage
+theme: nnycb_sass
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: twitter_feed_frontpage_block
+settings:
+  id: twitter_feed_frontpage_block
+  label: 'Latest Tweets'
+  provider: nnycb_helpers
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

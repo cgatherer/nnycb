@@ -1,0 +1,21 @@
+uuid: 8e4ad484-10da-4d52-920c-e7333bb3f5c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_copy
+    - paragraphs.paragraphs_type.bleed_card
+  module:
+    - text
+id: paragraph.bleed_card.field_copy
+field_name: field_copy
+entity_type: paragraph
+bundle: bleed_card
+label: Copy
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

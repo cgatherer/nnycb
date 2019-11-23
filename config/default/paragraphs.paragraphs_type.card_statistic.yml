@@ -1,0 +1,9 @@
+uuid: 8b20d41d-f1d9-4f47-abfe-fde1ddb9c305
+langcode: en
+status: true
+dependencies: {  }
+id: card_statistic
+label: 'Card statistic'
+icon_uuid: null
+description: 'Sub-paragraph: Title and value for card statistic'
+behavior_plugins: {  }

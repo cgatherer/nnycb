@@ -1,0 +1,25 @@
+uuid: 08b3a785-55e2-4aa0-a0b5-f41d14ac4a60
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ae2db221-76dd-4ed5-9e51-fd0797890160'
+  module:
+    - block_content
+  theme:
+    - nnycb_sass
+id: footeraddress
+theme: nnycb_sass
+region: footer_fourth
+weight: -9
+provider: null
+plugin: 'block_content:ae2db221-76dd-4ed5-9e51-fd0797890160'
+settings:
+  id: 'block_content:ae2db221-76dd-4ed5-9e51-fd0797890160'
+  label: 'Footer Address'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

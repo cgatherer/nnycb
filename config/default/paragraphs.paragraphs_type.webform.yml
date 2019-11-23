@@ -1,0 +1,9 @@
+uuid: 7ab98f15-3019-4b2e-8b76-7cb80bc3a0e5
+langcode: en
+status: true
+dependencies: {  }
+id: webform
+label: Webform
+icon_uuid: null
+description: 'Two column paragraph with form on right'
+behavior_plugins: {  }

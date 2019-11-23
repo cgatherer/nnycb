@@ -1,0 +1,19 @@
+uuid: 1257c96c-9ed7-4460-b240-eeb8038a1e27
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_grid_copy
+field_name: field_grid_copy
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

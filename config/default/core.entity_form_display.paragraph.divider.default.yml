@@ -1,0 +1,21 @@
+uuid: cabc044b-598a-40d0-972e-2a11757d0251
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.divider.field_container_color
+    - paragraphs.paragraphs_type.divider
+id: paragraph.divider.default
+targetEntityType: paragraph
+bundle: divider
+mode: default
+content:
+  field_container_color:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

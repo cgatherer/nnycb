@@ -1,0 +1,23 @@
+uuid: e1b119a6-8c2e-4777-85bc-b610a2a67b9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wide_style
+    - paragraphs.paragraphs_type.simple_copy
+id: paragraph.simple_copy.field_wide_style
+field_name: field_wide_style
+entity_type: paragraph
+bundle: simple_copy
+label: 'Wide style'
+description: 'Style without the large side padding'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

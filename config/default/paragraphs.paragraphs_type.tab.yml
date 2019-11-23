@@ -1,0 +1,9 @@
+uuid: f1c6694e-83b9-4b34-8568-f0c99e8bfa09
+langcode: en
+status: true
+dependencies: {  }
+id: tab
+label: Tab
+icon_uuid: null
+description: 'Delimits paragraphs into tabs. This Paragraph should precede all the content of a given tab, so the first instance of the tab paragraph should be at the top. '
+behavior_plugins: {  }

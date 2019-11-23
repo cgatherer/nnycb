@@ -1,0 +1,9 @@
+uuid: f305b06a-4ee3-4513-85fe-75657e3cd63b
+langcode: en
+status: true
+dependencies: {  }
+id: block
+label: Block
+icon_uuid: null
+description: 'Block refererence'
+behavior_plugins: {  }

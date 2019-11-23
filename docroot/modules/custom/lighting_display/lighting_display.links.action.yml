@@ -1,0 +1,10 @@
+entity.lighting_display.add_form:
+  route_name: entity.lighting_display.add_form
+  title: 'Add Lighting display'
+  appears_on:
+    - entity.lighting_display.collection
+entity.lighting_slot.add_form:
+  route_name: entity.lighting_slot.add_form
+  title: 'Add Lighting slot'
+  appears_on:
+    - entity.lighting_slot.collection

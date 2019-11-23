@@ -1,0 +1,9 @@
+uuid: de971f63-83a7-4b60-a516-fe18fd979c31
+langcode: en
+status: true
+dependencies: {  }
+id: stat
+label: stat
+icon_uuid: null
+description: 'Sub-paragraph: Title and textfield value'
+behavior_plugins: {  }

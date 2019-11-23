@@ -1,0 +1,21 @@
+uuid: 679555ac-2c1e-4e69-8015-0dc8a47a698a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_info_item_layout
+    - paragraphs.paragraphs_type.info_item
+  module:
+    - options
+id: paragraph.info_item.field_info_item_layout
+field_name: field_info_item_layout
+entity_type: paragraph
+bundle: info_item
+label: 'Info Item Layout'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

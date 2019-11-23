@@ -1,0 +1,21 @@
+uuid: d400b00e-c397-487f-824e-28d3ff1f03e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_header_text_size
+    - paragraphs.paragraphs_type.simple_copy
+  module:
+    - options
+id: paragraph.simple_copy.field_header_text_size
+field_name: field_header_text_size
+entity_type: paragraph
+bundle: simple_copy
+label: 'Title text size'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

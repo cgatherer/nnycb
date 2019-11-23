@@ -1,0 +1,9 @@
+uuid: 13dbdc91-00d4-4256-83fc-6644a2c158a6
+langcode: en
+status: true
+dependencies: {  }
+id: stat_card
+label: 'Stat card'
+icon_uuid: null
+description: 'Stat with image on blue background. Use SVG or transparent PNG with white graphic'
+behavior_plugins: {  }

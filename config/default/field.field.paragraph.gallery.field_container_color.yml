@@ -1,0 +1,23 @@
+uuid: c4ce8e36-c460-41be-b103-8e8c99a44573
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_container_color
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - options
+id: paragraph.gallery.field_container_color
+field_name: field_container_color
+entity_type: paragraph
+bundle: gallery
+label: 'Caption container color'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '#F4F4F4'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

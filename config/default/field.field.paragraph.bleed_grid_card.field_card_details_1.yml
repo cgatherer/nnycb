@@ -1,0 +1,52 @@
+uuid: 9b6fb39b-5fc8-43cc-bf9c-4eb9d98fce88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_details_1
+    - paragraphs.paragraphs_type.bleed_grid_card
+    - paragraphs.paragraphs_type.card_detail
+  module:
+    - entity_reference_revisions
+id: paragraph.bleed_grid_card.field_card_details_1
+field_name: field_card_details_1
+entity_type: paragraph
+bundle: bleed_grid_card
+label: 'Details 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      card_detail: card_detail
+    target_bundles_drag_drop:
+      bleed_card:
+        weight: 9
+        enabled: false
+      bleed_grid_card:
+        weight: 10
+        enabled: false
+      card:
+        weight: 11
+        enabled: false
+      card_detail:
+        enabled: true
+        weight: 12
+      card_statistic:
+        weight: 13
+        enabled: false
+      grid_card:
+        weight: 14
+        enabled: false
+      stat_overlay:
+        weight: 15
+        enabled: false
+      webform:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

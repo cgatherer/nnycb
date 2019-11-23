@@ -1,0 +1,21 @@
+uuid: c1b3829b-9d88-42ac-9919-aa947d599b47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_copy
+    - paragraphs.paragraphs_type.webform
+  module:
+    - text
+id: paragraph.webform.field_copy
+field_name: field_copy
+entity_type: paragraph
+bundle: webform
+label: Copy
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

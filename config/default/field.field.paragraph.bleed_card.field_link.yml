@@ -1,0 +1,23 @@
+uuid: d6661134-6e8a-4d96-95b1-26f91be3cde5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.bleed_card
+  module:
+    - link
+id: paragraph.bleed_card.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: bleed_card
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

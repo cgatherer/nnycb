@@ -1,0 +1,5 @@
+name: 'Lighting Display'
+type: module
+description: 'Bridge Lighting Display content types, forms, views, config, etc'
+core: 8.x
+package: 'Custom'

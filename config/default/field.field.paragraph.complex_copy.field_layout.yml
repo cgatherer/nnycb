@@ -1,0 +1,21 @@
+uuid: 1b7b4f49-292d-4155-82f7-f533e32d4134
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.complex_copy
+  module:
+    - options
+id: paragraph.complex_copy.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: complex_copy
+label: Layout
+description: 'Please select a layout option.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

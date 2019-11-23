@@ -1,0 +1,23 @@
+uuid: b4911112-1689-4944-b8ad-736ba3f0493a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_header_text_size
+    - paragraphs.paragraphs_type.complex_copy
+  module:
+    - options
+id: paragraph.complex_copy.field_header_text_size
+field_name: field_header_text_size
+entity_type: paragraph
+bundle: complex_copy
+label: 'Title text size'
+description: 'Please select your title text size.'
+required: false
+translatable: false
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

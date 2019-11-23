@@ -1,0 +1,9 @@
+uuid: 92b00ba0-2b52-4db8-bcb1-6d86bcd0100c
+langcode: en
+status: true
+dependencies: {  }
+id: info_list
+label: 'Info list'
+icon_uuid: null
+description: 'Title/image/copy header then list/grid of title/image/copy/link/details, with container coloring'
+behavior_plugins: {  }

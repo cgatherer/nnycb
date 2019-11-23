@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @file
+ * Contains nnycb_helpers.module.
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function nnycb_helpers_cron() {
+  /** @var \GuzzleHttp\Client $client */
+  $client = \Drupal::service('http_client_factory')->fromOptions([
+    'base_uri' => 'https://api.sunrise-sunset.org/',
+  ]);
+
+  $response = $client->get('json', [
+    'query' => [
+      'lat' => 41.070963,
+      'lng' => -73.8976583,
+      'formatted' => 0,
+    ]
+  ]);
+
+  $status = $response->getStatusCode();
+  if ($status == 200) {
+    $json = json_decode($response->getBody());
+    // times are UTC
+    $config = \Drupal::service('config.factory')->getEditable('nnycb_helpers.status');
+    $config->set('sunrise', $json->results->sunrise)->set('sunset', $json->results->sunset)->save();
+    //echo \Drupal::config('nnycb_helpers.status')->get('sunrise');
+  }
+
+}
+
+
+/*
+ * Generates a static variable in the scope of the page request
+ * to set instantiate like
+ *  $var = &p2p_helpers_variable_function(); $var = 'my value';
+ *    to read the var,
+ *   instantiate without.
+ */
+function &nnycb_helpers_variable_function() {
+  $var = &drupal_static(__FUNCTION__);
+  if (!isset($var)) {
+    // generate contents of static variable
+    $var = NULL;
+  }
+  return $var;
+}

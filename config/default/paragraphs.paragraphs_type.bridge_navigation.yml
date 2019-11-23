@@ -1,0 +1,9 @@
+uuid: efcb1930-8bc1-4e7d-be5b-6f1a2a0f5b6a
+langcode: en
+status: true
+dependencies: {  }
+id: bridge_navigation
+label: 'Overlook navigation'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

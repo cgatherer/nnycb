@@ -1,0 +1,9 @@
+uuid: 3614e0b7-7115-47d1-9d82-9a8f65bbd643
+langcode: en
+status: true
+dependencies: {  }
+id: simple_copy
+label: Copy–Simple
+icon_uuid: null
+description: 'Title, text and optional container color'
+behavior_plugins: {  }

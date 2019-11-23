@@ -1,0 +1,23 @@
+uuid: bfee7938-62d2-4fba-b8a5-18e9e6b66f9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_container_color
+    - paragraphs.paragraphs_type.divider
+  module:
+    - options
+id: paragraph.divider.field_container_color
+field_name: field_container_color
+entity_type: paragraph
+bundle: divider
+label: 'Divider color'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '#002D72'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

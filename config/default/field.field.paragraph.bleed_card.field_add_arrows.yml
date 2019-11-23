@@ -1,0 +1,21 @@
+uuid: 014b737a-02ee-49df-9418-368a9fd9ad23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_add_arrows
+    - paragraphs.paragraphs_type.bleed_card
+  module:
+    - options
+id: paragraph.bleed_card.field_add_arrows
+field_name: field_add_arrows
+entity_type: paragraph
+bundle: bleed_card
+label: 'Highlight text arrow'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

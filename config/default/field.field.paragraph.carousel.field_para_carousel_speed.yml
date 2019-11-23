@@ -1,0 +1,21 @@
+uuid: 3eb03cbe-8c1e-48ec-829e-762ef6ca3f12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_carousel_speed
+    - paragraphs.paragraphs_type.carousel
+  module:
+    - options
+id: paragraph.carousel.field_para_carousel_speed
+field_name: field_para_carousel_speed
+entity_type: paragraph
+bundle: carousel
+label: 'Carousel speed'
+description: 'Set carousel rotation speed.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

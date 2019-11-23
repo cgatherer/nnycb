@@ -1,0 +1,9 @@
+uuid: f4e2306e-ac7d-4520-8c75-81232501fb81
+langcode: en
+status: true
+dependencies: {  }
+id: bridge_status
+label: 'Bridge Status'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

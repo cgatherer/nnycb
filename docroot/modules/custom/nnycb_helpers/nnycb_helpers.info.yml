@@ -1,0 +1,5 @@
+name: 'NNYCB Helpers'
+type: module
+description: 'Misc code'
+core: 8.x
+package: 'Custom'

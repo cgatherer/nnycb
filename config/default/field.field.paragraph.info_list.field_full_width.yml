@@ -1,0 +1,23 @@
+uuid: b393094a-cd70-4cd8-8482-1d590b55a0c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_full_width
+    - paragraphs.paragraphs_type.info_list
+id: paragraph.info_list.field_full_width
+field_name: field_full_width
+entity_type: paragraph
+bundle: info_list
+label: 'Full width'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

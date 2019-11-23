@@ -1,0 +1,15 @@
+uuid: 5f06d59b-65c8-41a7-9926-5ca05c2a01f3
+langcode: en
+status: true
+dependencies: {  }
+name: max_1000
+label: 'Max 1000'
+effects:
+  d7e5476e-3a95-49ee-b1b2-fba28596f303:
+    uuid: d7e5476e-3a95-49ee-b1b2-fba28596f303
+    id: image_scale
+    weight: 1
+    data:
+      width: 1000
+      height: null
+      upscale: false

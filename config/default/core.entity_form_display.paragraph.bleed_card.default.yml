@@ -1,0 +1,92 @@
+uuid: 1b76e451-9bba-475e-b783-606580e22266
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bleed_card.field_add_arrows
+    - field.field.paragraph.bleed_card.field_card_image
+    - field.field.paragraph.bleed_card.field_card_orientation
+    - field.field.paragraph.bleed_card.field_container_color
+    - field.field.paragraph.bleed_card.field_copy
+    - field.field.paragraph.bleed_card.field_header_text_size
+    - field.field.paragraph.bleed_card.field_highlight_text
+    - field.field.paragraph.bleed_card.field_link
+    - field.field.paragraph.bleed_card.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.bleed_card
+  module:
+    - image
+    - link
+    - text
+id: paragraph.bleed_card.default
+targetEntityType: paragraph
+bundle: bleed_card
+mode: default
+content:
+  field_add_arrows:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_card_image:
+    weight: 8
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_card_orientation:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_container_color:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_copy:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_header_text_size:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_highlight_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_link:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

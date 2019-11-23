@@ -1,0 +1,80 @@
+uuid: 1157dcc8-2641-41f5-85e8-89253dacf708
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.info_list.field_card_image
+    - field.field.paragraph.info_list.field_container_color
+    - field.field.paragraph.info_list.field_copy
+    - field.field.paragraph.info_list.field_full_width
+    - field.field.paragraph.info_list.field_info_items
+    - field.field.paragraph.info_list.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.info_list
+  module:
+    - image
+    - paragraphs
+    - paragraphs_features
+    - text
+id: paragraph.info_list.default
+targetEntityType: paragraph
+bundle: info_list
+mode: default
+content:
+  field_card_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_container_color:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_copy:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_info_items:
+    type: paragraphs
+    weight: 4
+    settings:
+      title: Item
+      title_plural: Items
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: info_item
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+    third_party_settings:
+      paragraphs_features:
+        delete_confirmation: false
+        add_in_between: false
+        split_text: false
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  field_full_width: true
+  status: true

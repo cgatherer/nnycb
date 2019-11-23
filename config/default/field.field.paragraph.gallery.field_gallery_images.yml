@@ -1,0 +1,61 @@
+uuid: 8107d63a-37bc-43f9-9dec-31f82490033d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gallery_images
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.gallery_image
+  module:
+    - entity_reference_revisions
+id: paragraph.gallery.field_gallery_images
+field_name: field_gallery_images
+entity_type: paragraph
+bundle: gallery
+label: Images
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      gallery_image: gallery_image
+    target_bundles_drag_drop:
+      bleed_card:
+        weight: 12
+        enabled: false
+      bleed_grid_card:
+        weight: 13
+        enabled: false
+      card:
+        weight: 14
+        enabled: false
+      card_detail:
+        weight: 15
+        enabled: false
+      card_statistic:
+        weight: 16
+        enabled: false
+      gallery:
+        weight: 17
+        enabled: false
+      gallery_image:
+        enabled: true
+        weight: 18
+      grid_card:
+        weight: 19
+        enabled: false
+      stat_card:
+        weight: 20
+        enabled: false
+      stat_overlay:
+        weight: 21
+        enabled: false
+      webform:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

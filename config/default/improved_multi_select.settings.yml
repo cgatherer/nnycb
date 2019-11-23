@@ -1,0 +1,14 @@
+isall: false
+url: ''
+selectors: ''
+filtertype: partial
+orderable: false
+groupresetfilter: false
+buttontext_add: '>'
+buttontext_addall: »
+buttontext_del: '<'
+buttontext_delall: «
+buttontext_moveup: 'Move up'
+buttontext_movedown: 'Move down'
+_core:
+  default_config_hash: lyTkl7AENd9PuvKTH61MjhkbxtCuPkl5sp2QpINOtSw

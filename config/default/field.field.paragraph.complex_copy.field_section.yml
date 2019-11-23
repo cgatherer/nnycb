@@ -1,0 +1,19 @@
+uuid: 2e130fb4-0518-4660-80ec-487e71a58ad3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section
+    - paragraphs.paragraphs_type.complex_copy
+id: paragraph.complex_copy.field_section
+field_name: field_section
+entity_type: paragraph
+bundle: complex_copy
+label: 'Highlight text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

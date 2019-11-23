@@ -1,0 +1,160 @@
+uuid: b6912d9b-4693-4101-a721-489240ccf1f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.paragraph_page
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.bleed_card
+    - paragraphs.paragraphs_type.bleed_grid_card
+    - paragraphs.paragraphs_type.block
+    - paragraphs.paragraphs_type.bridge_navigation
+    - paragraphs.paragraphs_type.bridge_status
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.complex_copy
+    - paragraphs.paragraphs_type.divider
+    - paragraphs.paragraphs_type.full_weather
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.grid_card
+    - paragraphs.paragraphs_type.iconographic
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.info_list
+    - paragraphs.paragraphs_type.simple_copy
+    - paragraphs.paragraphs_type.tab
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: node.paragraph_page.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: paragraph_page
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion: accordion
+      bleed_card: bleed_card
+      bleed_grid_card: bleed_grid_card
+      block: block
+      bridge_navigation: bridge_navigation
+      bridge_status: bridge_status
+      carousel: carousel
+      complex_copy: complex_copy
+      gallery: gallery
+      grid_card: grid_card
+      divider: divider
+      iconographic: iconographic
+      full_weather: full_weather
+      info_list: info_list
+      image: image
+      simple_copy: simple_copy
+      video: video
+      webform: webform
+      tab: tab
+    target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: -65
+      accordion_item:
+        weight: -64
+        enabled: false
+      bleed_card:
+        enabled: true
+        weight: -63
+      bleed_grid_card:
+        enabled: true
+        weight: -62
+      block:
+        enabled: true
+        weight: -61
+      bridge_navigation:
+        enabled: true
+        weight: -60
+      bridge_status:
+        enabled: true
+        weight: -59
+      card_detail:
+        weight: -58
+        enabled: false
+      card_statistic:
+        weight: -57
+        enabled: false
+      carousel_image:
+        weight: -56
+        enabled: false
+      carousel:
+        enabled: true
+        weight: -55
+      complex_copy:
+        enabled: true
+        weight: -54
+      detail:
+        weight: -53
+        enabled: false
+      gallery:
+        enabled: true
+        weight: -52
+      gallery_image:
+        weight: -51
+        enabled: false
+      grid_card:
+        enabled: true
+        weight: -50
+      icon:
+        weight: -49
+        enabled: false
+      icon_set:
+        weight: -48
+        enabled: false
+      divider:
+        enabled: true
+        weight: -47
+      iconographic:
+        enabled: true
+        weight: -46
+      full_weather:
+        enabled: true
+        weight: -45
+      info_item:
+        weight: -44
+        enabled: false
+      info_list:
+        enabled: true
+        weight: -43
+      image:
+        enabled: true
+        weight: -42
+      overlook_link:
+        weight: -41
+        enabled: false
+      simple_copy:
+        enabled: true
+        weight: -40
+      stat:
+        weight: -39
+        enabled: false
+      stat_card:
+        weight: -38
+        enabled: false
+      stat_overlay:
+        weight: -37
+        enabled: false
+      video:
+        enabled: true
+        weight: -36
+      webform:
+        enabled: true
+        weight: -35
+      tab:
+        enabled: true
+        weight: -34
+field_type: entity_reference_revisions

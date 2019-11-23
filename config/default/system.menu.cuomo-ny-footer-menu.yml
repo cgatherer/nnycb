@@ -1,0 +1,8 @@
+uuid: b2c6119a-cd2c-461f-9abb-147e731975a8
+langcode: en
+status: true
+dependencies: {  }
+id: cuomo-ny-footer-menu
+label: 'Cuomo NY Footer Menu'
+description: 'Site links for the state of New York in the footer'
+locked: false
